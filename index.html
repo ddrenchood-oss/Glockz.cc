@@ -646,26 +646,26 @@
     ];
 
     const PRODUCTS = [
-      { name: "LOWE'S", sku: "LOWES-001" },
-      { name: "CHICK-FIL-A", sku: "CFA-001" },
-      { name: "IHG", sku: "IHG-001" },
-      { name: "ALASKA AIRLINES", sku: "ASA-001" },
-      { name: "YELP", sku: "YELP-001" },
-      { name: "MOE'S", sku: "MOES-001" },
-      { name: "ULTA", sku: "ULTA-001" },
-      { name: "HUNGRY HOWIE'S", sku: "HH-001" },
-      { name: "WALMART", sku: "WMT-001" },
-      { name: "TARGET", sku: "TGT-001" },
-      { name: "AMAZON", sku: "AMZ-001" },
-      { name: "BEST BUY", sku: "BBY-001" },
-      { name: "DOORDASH", sku: "DD-001" },
-      { name: "UBER EATS", sku: "UE-001" },
-      { name: "STARBUCKS", sku: "SBUX-001" },
-      { name: "APPLE", sku: "APL-001" },
-      { name: "NIKE", sku: "NKE-001" },
-      { name: "PLAYSTATION", sku: "PS-001" },
-      { name: "XBOX", sku: "XBX-001" },
-      { name: "ROBLOX", sku: "RBX-001" }
+      { name: "LOWE'S", sku: "INF" },
+      { name: "CHICK-FIL-A", sku: "INF" },
+      { name: "ONLYFANS", sku: "INF" },
+      { name: "ALASKA AIRLINES", sku: "INF" },
+      { name: "YELP", sku: "INF" },
+      { name: "MOE'S", sku: "INF" },
+      { name: "ULTA", sku: "INF" },
+      { name: "PAYPAL", sku: "INF" },
+      { name: "WALMART", sku: "INF" },
+      { name: "TARGET", sku: "INF" },
+      { name: "AMAZON", sku: "INF" },
+      { name: "BEST BUY", sku: "INF" },
+      { name: "DOORDASH", sku: "INF" },
+      { name: "UBER EATS", sku: "INF" },
+      { name: "STARBUCKS", sku: "INF" },
+      { name: "APPLE", sku: "INF" },
+      { name: "NIKE", sku: "INF" },
+      { name: "PLAYSTATION", sku: "INF" },
+      { name: "XBOX", sku: "INF" },
+      { name: "ROBLOX", sku: "INF" }
     ].map(p => ({ ...p, price: 10 }));
 
     const grid = document.getElementById("grid");
@@ -761,7 +761,7 @@
           <div class="body">
             <div class="logo">${escapeHtml(p.name)}</div>
             <div class="meta">
-              <span>Stock: 10</span>
+              <span>Stock: </span>
               <span class="code">${escapeHtml(p.sku)}</span>
             </div>
             <div class="buy">
@@ -788,7 +788,7 @@
           <div class="body">
             <div class="logo">${escapeHtml(num)}</div>
             <div class="meta">
-              <span>Stock: 10</span>
+              <span>Stock: </span>
               <span class="code">${escapeHtml(num)}</span>
             </div>
             <div class="buy">
